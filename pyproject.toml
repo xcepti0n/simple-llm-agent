@@ -1,7 +1,7 @@
 [project]
-name = "simplereactiveaicli"
+name = "simple-llm-agent"
 version = "0.1.0"
-description = "Add your description here"
+description = "This is a library which contains boilerplate code/basic example of different ways to create your AI agent that uses custom tools and locally run llm model (ollama)."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
