@@ -5,6 +5,7 @@ Examples:
 1. Langgraph Agent - Uses [Langgraph](https://www.langchain.com/langgraph) library and related langchain sum library for a basic reactive agent with simple tools.
 2. More to come.
 
+## Prerequisite
 ### uv 
 It can be installed using `pip install uv`
 
@@ -19,7 +20,7 @@ It opens chat terminal which you can test for chatting or just close using `/bye
 Start ollama server
 - `ollama serve`
 
-### Installing libraries
+## Installing libraries
 `uv add langgraph langchain_core langchain langchain-ollama`
 
 ## Running the agent
