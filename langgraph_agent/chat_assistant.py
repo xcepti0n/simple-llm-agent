@@ -17,7 +17,7 @@ class State(TypedDict):
     """
     messages: Annotated[List, add_messages]
 
-
+# Use the model which you are running in ollama
 MODEL="ollama:qwen3:4b"
 
 # Useful for storing memory, checkpoint for each session.

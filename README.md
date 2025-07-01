@@ -1,11 +1,8 @@
-This assistant is made using below python libraries.
+# Simple Reactive AI CLI
+This is a library which contains boilerplate code/ basic example of different way to create your ai agent using locally run llm model (ollama). You can easily modify it to use any other model as well.
 
-- langgraph
-    - langchain_core
-    - langchain
-- ollama
-
-## Prerequisite
+Examples:
+1. Langgraph Agent - Uses [Langgraph](https://www.langchain.com/langgraph) library and related langchain sum library for a basic reactive agent with simple tools.
 
 ### uv 
 It can be installed using `pip install uv`
@@ -25,7 +22,8 @@ Start ollama server
 `uv add langgraph langchain_core langchain langchain-ollama`
 
 ## Running the agent
-Runs the main module i.e. main.py
+Comment/Uncomment the code to run specific Agent example in main.py.
+Then run the main module main.py using
 `uv run -m main`
 
 or
