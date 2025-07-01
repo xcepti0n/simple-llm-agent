@@ -29,6 +29,7 @@ config: RunnableConfig = {
 # Message history helps, but it is more efficient.
 memory = InMemorySaver()
 
+# Create a simple agent with tool support using prebuild create_react_agent function.
 agent = create_react_agent(
     model=MODEL,
     tools=[get_current_time], # add multiple tools here

@@ -1,8 +1,9 @@
-# Simple Reactive AI CLI
-This is a library which contains boilerplate code/ basic example of different way to create your ai agent using locally run llm model (ollama). You can easily modify it to use any other model as well.
+# Simple LLM Agent (with tools usage)
+This is a library which contains boilerplate code/basic example of different ways to create your AI agent that uses custom tools and locally run llm model (ollama). You can easily modify it to use any other model as well.
 
 Examples:
 1. Langgraph Agent - Uses [Langgraph](https://www.langchain.com/langgraph) library and related langchain sum library for a basic reactive agent with simple tools.
+2. More to come.
 
 ### uv 
 It can be installed using `pip install uv`
@@ -38,7 +39,7 @@ or if you have globally installed modules using pip, you can simply run
 
 ### Langgraph Agent example
 ```
-Hello from simplereactiveaicli!
+Hello from simple-tool-agent!
 You: Hello 
 AI Agent: <think>
 Okay, the user said "Hello". I need to respond appropriately. Let me check the tools available. There's a function called get_current_time that returns the current local time. Since the user just greeted me, maybe I should respond with a friendly message and also provide the current time. But wait, do I need to use the tool here? The user didn't ask for the time, but maybe offering it as a helpful gesture. However, the instructions say to use tools when necessary. If the user's query doesn't explicitly require a tool, maybe I shouldn't call it. Let me think. The user's message is just a greeting. The best response is to greet them back and offer assistance. No need for the tool call here. So I'll just respond with a friendly message.
