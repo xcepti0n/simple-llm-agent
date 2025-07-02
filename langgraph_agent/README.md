@@ -1,3 +1,5 @@
+
+## Assistant using Langgraph
 This assistant is made using below python libraries.
 
 - langgraph
@@ -34,9 +36,8 @@ or
 
 `.\.venv\Scripts\python.exe main.py`
 
-or if you have globally installed modules using pip, you can simply run
-
-`python main.py` or `python langgraph_agent/chat-assistant.py`
+or to just run the langgraph module
+`uv run -m langgraph_chat.chat_assitant`
 
 ## Example Conversation
 
