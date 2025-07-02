@@ -1,8 +1,6 @@
-import asyncio
 import datetime
 
 from typing import Any
-
 from strands import Agent, tool
 from strands.models.ollama import OllamaModel
 from strands_tools import calculator
@@ -55,11 +53,6 @@ class CustomPrintingCallbackHandler:
         if complete and data:
             print("\n")
 
-# async def process_streaming_response(agent, message):
-#     agent.stream_async(message)
-    # async for event in agent_stream:
-    #     print(event["contentBlockDelta"]["delta"]["text"])
-
 def strands_chat_assistant():
     # Create an Ollama model instance
     ollama_model = OllamaModel(
@@ -77,10 +70,9 @@ def strands_chat_assistant():
         user_input = input("You: ")
         if user_input.lower() in ["exit", "quit"]:
             break
-        # Simpler option
-        message = agent(user_input).message.get("content")[-1].get("text")
-        
-        # await process_streaming_response(agent, user_input)
+
+        # messages are printed in console using callback handler added during initialization of agent.
+        agent(user_input).message.get("content")[-1].get("text")
 
 def print_ai_response(message, end=None):
     print_custom("96", message, end)
@@ -99,8 +91,4 @@ def print_custom(color_code: str, message:str, end):
     print(f"\033[{color_code}m{message}\033[0m", end=end)
 
 if __name__ == "__main__":
-    # For simple usage without streaming
     strands_chat_assistant()
-
-    # With Streaming
-    # asyncio.run(strands_chat_assistant())
