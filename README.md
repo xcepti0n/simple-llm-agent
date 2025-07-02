@@ -3,7 +3,8 @@ This is a library which contains boilerplate code/basic example of different way
 
 Examples:
 1. Langgraph Agent - Uses [Langgraph](https://www.langchain.com/langgraph) library and related langchain sum library for a basic reactive agent with simple tools.
-2. More to come.
+2. Strands Agent - Uses [Strands-Agent](https://strandsagents.com) library and [strands-agents-tools](https://strandsagents.com/latest/user-guide/concepts/tools/example-tools-package/)
+3. More to come.
 
 ## Prerequisite
 ### uv 
